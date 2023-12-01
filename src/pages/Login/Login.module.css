@@ -1,0 +1,54 @@
+.login {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	width: 1400px;
+	margin: 0 auto;
+}
+.title {
+	color: var(--white);
+}
+.description {
+	color: var(--white);
+}
+.bg {
+	position: absolute;
+	left: 0;
+	display: flex;
+	align-items: center;
+	width: 65%;
+	height: 100vh;
+	z-index: 1;
+	background: url('/assets/circle.svg'),
+		linear-gradient(180deg, #0575e6 0%, #02298a 84.79%, #021b79 100%);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+.authForm {
+	padding: 40px;
+	display: flex;
+	align-items: center;
+}
+.container {
+	display: flex;
+	width: 68%;
+	position: relative;
+	z-index: 2;
+	align-items: center;
+}
+.hello {
+	margin: 0;
+	font-size: 26px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin-bottom: 8px;
+}
+.welcome {
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin: 0;
+	margin-bottom: 32px;
+}

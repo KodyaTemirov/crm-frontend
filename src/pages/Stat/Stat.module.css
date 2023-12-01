@@ -1,0 +1,153 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.filter {
+  width: 200px;
+}
+.headerFilters {
+  display: flex;
+  gap: 24px;
+  width: 424px;
+}
+.headerBalance {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.balance {
+  color: var(--gray-text);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+}
+.balanceNum {
+  color: var(--black);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+}
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.tableHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr 136px 136px 136px 136px;
+  grid-column-gap: 16px;
+  grid-row-gap: 8px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  padding: 0 16px;
+}
+.tableBody {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.tableBodyItem {
+  background-color: var(--gray-light);
+  display: grid;
+  grid-template-columns: 1fr 1fr 136px 136px 136px 136px;
+  align-items: center;
+  grid-column-gap: 16px;
+  grid-row-gap: 8px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: var(--gray-text);
+  padding: 8px 16px;
+}
+.tableBodyItem:nth-child(even) {
+  background-color: var(--white);
+}
+.popupContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.popupText {
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--gray-text);
+  margin: 0;
+}
+.popupTitle {
+  margin: 32px 0 16px 0;
+}
+.tableMobHeader {
+  display: none;
+}
+
+@media only screen and (max-width: 980px) {
+  .tableBody {
+    gap: 16px;
+    margin: 0 -24px;
+  }
+  .tableBodyItem {
+    border-top: 2px solid var(--gray);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    background: none;
+  }
+  .tableBodyItem:first-child {
+    border: none;
+  }
+  .tableRow {
+    display: flex;
+    width: 100%;
+    gap: 16px;
+    padding: 8px 16px;
+    background-color: var(--gray-light);
+  }
+  .tableRow:nth-child(even) {
+    background-color: var(--white);
+  }
+  .tableHeader {
+    display: none;
+  }
+  .tableMobHeader {
+    display: block;
+    width: 25%;
+    flex: none;
+  }
+}
+@media only screen and (max-width: 744px) {
+  .filter {
+    width: 100%;
+  }
+  .header {
+    flex-wrap: wrap-reverse;
+  }
+  .headerFilters {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .headerBalance {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+@media all and (max-width: 480px) {
+  .table {
+    overflow: hidden;
+  }
+  .headerFilters {
+    flex-direction: column;
+  }
+  .tableMobHeader {
+    width: 120px;
+  }
+  .headerBalance {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,39 @@
+.companyCard {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.companyLogo {
+  border-radius: 4px;
+  overflow: hidden;
+  width: 80px;
+  height: 80px;
+  flex: none;
+}
+.companyLogo img {
+  width: 100%;
+}
+.companyInfo {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+.saveButton {
+  margin-top: 32px;
+}
+.companyName {
+  color: var(--black);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+}
+.companyRating {
+  color: var(--gray-text);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
